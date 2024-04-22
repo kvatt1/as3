@@ -1,4 +1,4 @@
- :root{
+:root{
     --theme-color:#acc7f6 ;
     --font-color: #4c42bf;
     --background-color:rgb(168, 246, 246);
@@ -20,6 +20,9 @@
         margin-bottom: 1%;
         grid-area: nav;
         overflow: hidden;
+        /*@media (min-width: 500px){
+        padding: 1%;
+        }*/
     }
     main{
         display: grid;
@@ -80,20 +83,7 @@
     #years::first-letter{
     font-size: 80px;
     }
-    .hamburger {
-      display: none;
-    }
-    .small-nav{
-        background-color:var(--theme-color);
-        color: #fff;
-        text-align:justify;
-        padding: 1%;
-        font-weight: bold;
-        margin-bottom: 1%;
-        grid-area: nav;
-        overflow: hidden;
-    }
-    @media only screen and (max-width: 700px){    
+    @media only screen and (max-width: 500px){    
         .projects-experience{
             grid-template-columns: 1fr;
         }
@@ -118,15 +108,15 @@
             justify-content: space-evenly;
             height: 80vh;
         }
-	    .hamburger {
-         display: block;
-        }
-        .main-nav{
-            display: none;
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 10px;
         }
         .profile-img{
             width:150px;
         }
-        
-    
+
     }
