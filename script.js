@@ -5,8 +5,8 @@
   }*/
 
   document.getElementById('mobile-nav').addEventListener('click', function() {
-    var navList = document.getElementById('nav');
-    if (navList === 'nav') {
-        navList.style.display = 'none';
+    var navList = document.getElementById('small-nav');
+    if (navList === 'small-nav') {
+        navList.style.display = 'flex';
     } 
 });
