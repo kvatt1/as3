@@ -118,10 +118,8 @@
         .profile-img{
             width:150px;
         }
-        :is(#about,#skills,#experience,#contact){
+        :is(#experience,#contact){
             background-color:var(--theme-color);
-            margin-top: 1%;
-            margin-bottom: 1%;
             }
 
     }
